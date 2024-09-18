@@ -64,6 +64,12 @@ body:
         - label: "Patient"
 
   - type: textarea
+    id: more-information
+    attributes:
+      label: More information
+      description: More information that may be useful
+
+  - type: textarea
     id: testing-strategy
     attributes:
       label: Testing strategy
