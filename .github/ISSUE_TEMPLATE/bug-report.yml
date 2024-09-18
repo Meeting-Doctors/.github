@@ -21,17 +21,24 @@ body:
     id: steps-to-reproduce
     attributes:
       label: Steps To Reproduce
-      description: Steps to reproduce the behavior.
-      placeholder: |
-        1. Go to '...'
-        2. Click on '...'
-        3. Scroll down to '...'
-        4. See error
+      description: Steps to reproduce the behavior
     validations:
       required: true
+
   - type: textarea
     id: additional-information
     attributes:
       label: Additional Information
       description: |
         Provide any additional information such as logs, screenshots, likes, scenarios in which the bug occurs so that it facilitates resolving the issue.
+
+  - type: dropdown
+    id: urgency
+    attributes:
+      label: Urgency
+      description: How much urgent is this bug
+      options:
+        - "Critical: the bug is making the service unavailable in production and affecting a substantial number of customers or Meeting Doctors' employees"
+        - "High: the bug is making the service intermittently unavailable in production and affecting a substantial number of customers or Meeting Doctors' employees"
+        - "Medium: the bug is not making the service unavailable in production and is affecting a reduced number of customers or Meeting Doctors' employees"
+        - "Low: the bug is not affecting customers or Meeting Doctors' employees, is mostly aesthetical or not completely convenient"
