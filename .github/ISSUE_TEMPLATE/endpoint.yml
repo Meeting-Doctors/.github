@@ -48,20 +48,21 @@ body:
       label: Response body
       description: Response body JSON, if applicable
 
-  - type: checkboxes
+  - type: dropdown
     id: allowed-roles
     attributes:
       label: Allowed roles
+      multiple: true
       options:
-        - label: "All"
-        - label: "Superadmin"
-        - label: "Admin"
-        - label: "Professional"
-        - label: "Company manager"
-        - label: "Sales"
-        - label: "Support"
-        - label: "IT"
-        - label: "Patient"
+        - "All"
+        - "Superadmin"
+        - "Admin"
+        - "Professional"
+        - "Company manager"
+        - "Sales"
+        - "Support"
+        - "IT"
+        - "Patient"
 
   - type: textarea
     id: more-information
