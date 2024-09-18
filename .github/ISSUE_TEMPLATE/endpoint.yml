@@ -43,8 +43,6 @@ body:
     attributes:
       label: Request body
       description: Request body JSON
-    validations:
-      required: true
 
   - type: textarea
     id: response-body
