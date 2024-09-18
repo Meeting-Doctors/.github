@@ -1,0 +1,47 @@
+name: Console command creation
+description: Issue to create console commands
+title: "[CONSOLE_COMMAND]: "
+labels: ["backend"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This is the template to create new console command tickets
+
+  - type: input
+    id: name
+    attributes:
+      label: Console command name
+      description: "The name of the console command, like migrations:migrate"
+    validations:
+      required: true
+
+  - type: textarea
+    id: arguments
+    attributes:
+      label: Arguments
+      description: Break-line-separated list of arguments in the format param_name (param_type(integer, float, string, etc)) [required]
+
+  - type: textarea
+    id: options
+    attributes:
+      label: Options
+      description: Break-line-separated list of options in the format param_name (param_type(integer, float, string, etc)) [required]
+
+  - type: textarea
+    id: response
+    attributes:
+      label: Response
+      description: Response, if applicable
+
+  - type: textarea
+    id: testing-strategy
+    attributes:
+      label: Testing strategy
+      description: Type here any special, not obvious testing strategy for this console command
+
+  - type: textarea
+    id: release-strategy
+    attributes:
+      label: Release strategy
+      description: Release strategy, if different than deploy when ready

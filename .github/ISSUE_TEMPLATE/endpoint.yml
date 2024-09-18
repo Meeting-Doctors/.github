@@ -1,5 +1,5 @@
 name: Endpoint creation
-description: File a bug report here
+description: Issue to create endpoints
 title: "[ENDPOINT]: "
 labels: ["backend"]
 body:
