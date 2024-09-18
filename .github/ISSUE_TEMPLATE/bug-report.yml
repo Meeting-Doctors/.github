@@ -42,3 +42,5 @@ body:
         - "High: the bug is making the service intermittently unavailable in production and affecting a substantial number of customers or Meeting Doctors' employees"
         - "Medium: the bug is not making the service unavailable in production and is affecting a reduced number of customers or Meeting Doctors' employees"
         - "Low: the bug is not affecting customers or Meeting Doctors' employees, is mostly aesthetical or not completely convenient"
+    validations:
+      required: true
