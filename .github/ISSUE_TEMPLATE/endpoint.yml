@@ -48,6 +48,21 @@ body:
       label: Response body
       description: Response body JSON, if applicable
 
+  - type: checkboxes
+    id: allowed-roles
+    attributes:
+      label: Allowed roles
+      options:
+        - label: "All"
+        - label: "Superadmin"
+        - label: "Admin"
+        - label: "Professional"
+        - label: "Company manager"
+        - label: "Sales"
+        - label: "Support"
+        - label: "IT"
+        - label: "Patient"
+
   - type: textarea
     id: testing-strategy
     attributes:
