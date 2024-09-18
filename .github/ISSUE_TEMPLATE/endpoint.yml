@@ -50,5 +50,16 @@ body:
     id: response-body
     attributes:
       label: Response body
-      description: |
-        Response body JSON, if applicable
+      description: Response body JSON, if applicable
+
+  - type: textarea
+    id: testing-strategy
+    attributes:
+      label: Testing strategy
+      description: Type here any special, not obvious testing strategy for this endpoint
+
+  - type: textarea
+    id: release-strategy
+    attributes:
+      label: Release strategy
+      description: Release strategy, if different than deploy when ready
