@@ -35,8 +35,6 @@ body:
     attributes:
       label: Query params
       description: Break-line-separated list of query params in the format param_name (param_type(integer, float, string, etc)) [required]
-    validations:
-      required: true
 
   - type: textarea
     id: request-body
