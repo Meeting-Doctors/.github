@@ -1,0 +1,54 @@
+name: Endpoint creation
+description: File a bug report here
+title: "[ENDPOINT]: "
+labels: ["backend"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This is the template to create new endpoint tickets
+
+  - type: dropdown
+    id: method
+    attributes:
+      label: Method
+      description: Verb of the HTTP endpoint
+      options:
+        - GET
+        - POST
+        - PUT
+        - PATCH
+        - DELETE
+    validations:
+      required: true
+
+  - type: input
+    id: path
+    attributes:
+      label: Path
+      description: Path for the HTTP endpoint
+    validations:
+      required: true
+
+  - type: textarea
+    id: query-params
+    attributes:
+      label: Query params
+      description: Break-line-separated list of query params in the format param_name (param_type(integer, float, string, etc)) [required]
+    validations:
+      required: true
+
+  - type: textarea
+    id: request-body
+    attributes:
+      label: Request body
+      description: Request body JSON
+    validations:
+      required: true
+
+  - type: textarea
+    id: response-body
+    attributes:
+      label: Response body
+      description: |
+        Response body JSON, if applicable
